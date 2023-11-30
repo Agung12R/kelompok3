@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 27 Nov 2023 pada 16.40
+-- Waktu pembuatan: 30 Nov 2023 pada 10.14
 -- Versi server: 10.6.12-MariaDB-0ubuntu0.22.04.1
 -- Versi PHP: 8.1.2-1ubuntu2.14
 
@@ -20,30 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_fashion_gemilang`
 --
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tabel_user`
---
-
-CREATE TABLE `tabel_user` (
-  `idUser` int(11) NOT NULL,
-  `namaUser` varchar(50) NOT NULL,
-  `email` varchar(70) NOT NULL,
-  `password` varchar(40) NOT NULL,
-  `alamat` text NOT NULL,
-  `telpon` varchar(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data untuk tabel `tabel_user`
---
-
-INSERT INTO `tabel_user` (`idUser`, `namaUser`, `email`, `password`, `alamat`, `telpon`) VALUES
-(4, 'Asep', 'asep@outlook.com', 'dc855efb0dc7476760afaa1b281665f1', 'Sukabumi', '087777777777'),
-(6, 'gung', 'agungiky12@gmail.com', '7025ab1ab8333c2086c23a187e539946', 'bekasi barat', '081808823587'),
-(7, 'akrom', 'malis@gmail.com', '7025ab1ab8333c2086c23a187e539946', 'golong', '1949041904971');
 
 -- --------------------------------------------------------
 
@@ -66,7 +42,7 @@ CREATE TABLE `tb_admin` (
 --
 
 INSERT INTO `tb_admin` (`admin_id`, `admin_name`, `username`, `password`, `admin_telp`, `admin_email`, `admin_address`) VALUES
-(1, 'Rgi Shop', 'admin', '2128e15b849bb3d5b1fa88cc18d494fe', '+6282110568914', 'agungiky12@gmail.com', 'Kampus RGI 01Sawangan - Depok Jl. Raya Pengasinan, RT/RW 001/006 Kel. Pengasinan Kec. Sawangan Kota Depok - Jawa Barat 16518');
+(1, 'Rgi Shop', 'admin', '21232f297a57a5a743894a0e4a801fc3', '+6282110568914', 'agungiky12@gmail.com', 'Kampus RGI 01Sawangan - Depok Jl. Raya Pengasinan, RT/RW 001/006 Kel. Pengasinan Kec. Sawangan Kota Depok - Jawa Barat 16518');
 
 -- --------------------------------------------------------
 
@@ -128,12 +104,6 @@ INSERT INTO `tb_product` (`product_id`, `category_id`, `product_name`, `product_
 --
 
 --
--- Indeks untuk tabel `tabel_user`
---
-ALTER TABLE `tabel_user`
-  ADD PRIMARY KEY (`idUser`);
-
---
 -- Indeks untuk tabel `tb_admin`
 --
 ALTER TABLE `tb_admin`
@@ -155,12 +125,6 @@ ALTER TABLE `tb_product`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
-
---
--- AUTO_INCREMENT untuk tabel `tabel_user`
---
-ALTER TABLE `tabel_user`
-  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_admin`
