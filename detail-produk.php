@@ -83,8 +83,7 @@ $p = mysqli_fetch_object($produk);
 
         <script>
             function sendwhatsapp() {
-                // var phonenumber = "<?php echo $a->admin_telp ?>";
-                var phonenumber = "+81808823587";
+                var phonenumber = "<?php echo $a->admin_telp ?>";
 
                 var name = document.querySelector('.name').value;
                 var produk = document.querySelector('.produk').value;
