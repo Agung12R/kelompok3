@@ -1,3 +1,3 @@
-# Fashion Gemilang
+# Kel 3
 
-## kelompok 3
+## fashiongemilang
